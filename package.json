@@ -1,0 +1,19 @@
+{
+  "name": "nest-admin",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "bun --bun turbo run dev",
+    "dev:s": "bun --bun turbo run dev --filter=nest-server"
+  },
+  "author": "owocc",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "turbo": "latest"
+  },
+  "packageManager": "bun@1.1.34"
+}

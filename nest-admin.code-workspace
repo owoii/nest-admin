@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"name": "Nest Admin",
+			"path": "."
+		},
+		{
+			"name": "Nest Admin Vue",
+			"path": "./apps/nest-admin-vue"
+		},
+		{
+			"name": "Nest Admin Server",
+			"path": "./apps/nest-server"
+		},
+		{
+			"name": "Common Types",
+			"path": "./packages/types"
+		},
+		{
+			"name": "Zod Schema",
+			"path": "./packages/zod"
+		},
+		{
+			"name": "Database ----------------",
+			"path": "./packages/db"
+		},
+		{
+			"name": "Database Postgres",
+			"path": "./packages/db-pg"
+		},
+		{
+			"name": "Database Mysql",
+			"path": "./packages/db-mysql"
+		}
+	],
+}

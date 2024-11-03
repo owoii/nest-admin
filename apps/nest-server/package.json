@@ -1,0 +1,38 @@
+{
+  "name": "nest-server",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "type": "module",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "bun ./src/main.ts",
+    "watch": "bun --watch ./src/main.ts",
+    "dev": "bun run --define process.env.NODE_ENV=\"'development'\" --watch ./src/main.ts",
+    "studio": "bun drizzle-kit studio",
+    "build:nest": "nest build",
+    "build": "bun build --define process.env.NODE_ENV=\"'production'\"  --target bun --outdir dist/server -e class-transformer --format esm --splitting --minify ./src/main.ts",
+    "build:compile": "bun build --define process.env.NODE_ENV=\"'production'\" ./src/main.ts --target bun --outfile dist/cli -e class-transformer --format esm --minify --compile",
+    "build:external": "bun build --define process.env.NODE_ENV=\"'production'\" ./src/main.ts --target bun --outdir dist/external --format esm --splitting --minify --packages external",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start:nest": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "lint": "bun --bun oxlint"
+  },
+  "dependencies": {
+    "@repo/server-common": "workspace:*",
+    "@repo/db": "workspace:*",
+    "@repo/zod": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@nestjs/schematics": "^10.0.0",
+    "@repo/types": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "drizzle-kit": "^0.27.1",
+    "oxlint": "^0.11.0"
+  }
+}

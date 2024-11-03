@@ -1,0 +1,15 @@
+{
+  "name": "@repo/types",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "author": "owocc",
+  "main": "",
+  "files": [
+    "*.d.ts"
+  ],
+  "types": "index.d.ts",
+  "devDependencies": {
+    "@repo/db": "workspace:*"
+  }
+}

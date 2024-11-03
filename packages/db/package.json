@@ -1,0 +1,16 @@
+{
+  "name": "@repo/db",
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5.0.0",
+    "drizzle-orm": "^0.36.0"
+  },
+  "dependencies": {
+    "@db/mysql": "workspace:*",
+    "@db/pg": "workspace:*"
+  },
+  "exports": {
+    ".": "./index.ts",
+    "./schema": "./schema.ts"
+  }
+}

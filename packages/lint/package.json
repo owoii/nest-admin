@@ -1,0 +1,7 @@
+{
+  "name": "@repo/lint-config",
+  "private": true,
+  "peerDependencies": {
+    "oxlint": "latest"
+  }
+}

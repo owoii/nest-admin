@@ -1,0 +1,16 @@
+{
+  "name": "@db/mysql",
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5.0.0",
+    "drizzle-orm": "^0.36.0"
+  },
+  "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
+    "mysql2": "^3.11.3"
+  },
+  "exports": {
+    ".": "./schema/index.ts",
+    "./schema": "./schema.ts"
+  }
+}
